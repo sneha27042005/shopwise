@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Shopping Guide</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Layout */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1e1e6; /* Light pastel pink background */
+            color: #3b3a36; /* Darker text for contrast */
+        }
+
+        /* Header */
+        header {
+            background-color: #d68fae; /* Dark pastel pink for header */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        /* Navigation Menu */
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+            background-size: cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 15px 30px;
+            background-color: #d68fae; /* Dark pastel pink for buttons */
+            color: white;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero button:hover {
+            background-color: #ba7e99; /* Slightly darker pink on hover */
+        }
+
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 2.5rem;
+            color: #3b3a36;
+        }
+
+        /* Category Section */
+        .category-section {
+            padding: 50px 20px;
+        }
+
+        .category-section .items {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .category-item {
+            background-color: #ffffff; /* White background for items */
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            width: 100%;
+        }
+
+        .category-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .category-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .category-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #3b3a36; /* Dark text for item names */
+        }
+
+        .category-item p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #3b3a36; /* Dark text for prices */
+        }
+
+        .category-item button {
+            padding: 10px 20px;
+            background-color: #d68fae; /* Dark pastel pink for item buttons */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        .category-item button:hover {
+            background-color: #ba7e99; /* Darker pink on hover */
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #d68fae; /* Dark pastel pink for footer */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>FOODWISE!</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to the Foodie Haven</h2>
+        <p>Explore and shop your favourite food items.</p>
+        <button onclick="window.location.href='#drinks'">Start Shopping</button>
+    </section>
+
+    <!-- Drinks Section -->
+    <section id="drinks" class="category-section">
+        <h2 class="section-title">Cool Drinks</h2>
+        <div class="items">
+            <div class="category-item">
+                <img src="https://via.placeholder.com/200x200" alt="Iced Tea">
+                <h3>Iced Tea</h3>
+                <button onclick="window.location.href='iced-tea.html'">Shop Now</button>
+            </div>
+            <div class="category-item">
+                <img src="https://via.placeholder.com/200x200" alt="Lemonade">
+                <h3>Lemonade</h3>
+                <button onclick="window.location.href='lemonade.html'">Shop Now</button>
+            </div>
+            <div class="category-item">
+                <img src="https://via.placeholder.com/200x200" alt="Fresh Juice">
+                <h3>Fresh Juice</h3>
+                <button onclick="window.location.href='fresh_juice.html'">Shop Now</button>
+            </div>
+            <div class="category-item">
+                <img src="https://via.placeholder.com/200x200" alt="Sparkling Water">
+                <h3>Sparkling Water</h3>
+                <button onclick="window.location.href='sparkling_water.html'">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rices Section -->
+    <section id="rices" class="category-section">
+        <h2 class="section-title">Rices</h2>
+        <div class="items">
+            <div class="category-item">
+                <img src="https://via.placeholder.com/200x200" alt="Basmati Rice">
+                <h3>mandhi</h3>
+                <button onclick="window.location.href='mandhi.html'">Shop Now</button>
+            </div>
+            <div class="category-item">
+                <img src="https://via.placeholder.com/200x200" alt="Jasmine Rice">
+                <h3>biriyani</h3>
+                <button onclick="window.location.href='biriyani.html'">Shop Now</button>
+            </div>
+            <div class="category-item">
+                <img src="https://via.placeholder.com/200x200" alt="Brown Rice">
+                <h3>fried rice</h3>
+                <button onclick="window.location.href='fried_rice.html'">Shop Now</button>
+            </div>
+            <div class="category-item">
+                <img src="https://via.placeholder.com/200x200" alt="Sticky Rice">
+                <h3>ghee rice</h3>
+                <button onclick="window.location.href='ghee_rice.html'">Shop Now</button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Breads Section -->
+    <section id="breads" class="category-section">
+        <h2 class="section-title">Breads</h2>
+        <div class="items">
+            <div class="category-item">
+                <img src="https://via.placeholder.com/200x200" alt="Whole Wheat Bread">
+                <h3>garlic naan</h3>
+                <button onclick="window.location.href='garlic_naan.html'">Shop Now</button>
+            </div>
+            <div class="category-item">
+                <img src="https://via.placeholder.com/200x200" alt="French Baguette">
+                <h3>kulcha</h3>
+                <button onclick="window.location.href='kulcha.html'">Shop Now</button>
+            </div>
+            <div class="category-item">
+                <img src="https://via.placeholder.com/200x200" alt="Sourdough Bread">
+                <h3>paratha</h3>
+                <button onclick="window.location.href='paratha.html'">Shop Now</button>
+            </div>
+            <div class="category-item">
+                <img src="https://via.placeholder.com/200x200" alt="Garlic Bread">
+                <h3>roti</h3>
+                <button onclick="window.location.href='roti.html'">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+   
